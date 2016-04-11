@@ -1,0 +1,10 @@
+#This is a test file.
+#cnt = 1000
+cnt 1000
+
+#value = 123
+vaule 123
+#default = 666
+ default 666
+
+#End of the file.
