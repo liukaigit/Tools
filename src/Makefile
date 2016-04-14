@@ -1,10 +1,13 @@
 all:liblkfunc.a
 
-liblkfunc.a:lkfunc.o
+OBJS = lkfunc.o
+SRCS = lkfunc.c
+
+liblkfunc.a:$(OBJS)
 	ar crv liblkfunc.a lkfunc.o
 	cp liblkfunc.a ./lib
 
-lkfunc.o:lkfunc.c
+$(OBJS):$(SRCS)
 	gcc -c lkfunc.c -I./include/
 
 clean:
