@@ -1,14 +1,14 @@
-all:liblkfunc.a
+all:libtoolhub.a
 
-OBJS = lkfunc.o
-SRCS = lkfunc.c
+OBJS = getfiled.o kmp.o
+SRCS = getfiled.c kmp.c
 
-liblkfunc.a:$(OBJS)
-	ar crv liblkfunc.a lkfunc.o
-	cp liblkfunc.a ./lib
+libtoolhub.a:$(OBJS)
+	ar crv libtoolhub.a getfiled.o
+	cp libtoolhub.a ../lib/
 
 $(OBJS):$(SRCS)
-	gcc -c lkfunc.c -I./include/
+	gcc -c $^ 
 
 clean:
 	rm *.o a.out -rf
