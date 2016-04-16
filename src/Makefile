@@ -1,11 +1,10 @@
 all:libtoolhub.a
 
-OBJS = getfiled.o kmp.o
-SRCS = getfiled.c kmp.c
+OBJS = getstr.o kmp.o
+SRCS = getstr.c kmp.c
 
 libtoolhub.a:$(OBJS)
-	ar crv libtoolhub.a $(OBJS)
-	cp libtoolhub.a ../lib/
+	ar crv ../lib/libtoolhub.a $(OBJS)
 
 $(OBJS):$(SRCS)
 	gcc -c $^ 
