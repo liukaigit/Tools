@@ -1,7 +1,15 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<unistd.h>
-#include<sys/types.h>
+/*
+ *filename:lkfunc.c
+ *author:liukai
+ *version:1.0.0.1
+ *description:This document is mainly for commom string operations,reduce repetitive works.Each 
+ *function to realize a single function,flexibility and versatility.
+**/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
 
 #define MAX_LEN 1024
 

@@ -11,4 +11,4 @@ $(OBJS):$(SRCS)
 	gcc -c lkfunc.c -I./include/
 
 clean:
-	rm *.o -rf
+	rm *.o a.out -rf
